@@ -2,6 +2,9 @@
 
 *A runtime framework for behavioral coherence in small language models.*
 
+This repository provides the **public documentation and summary** of the Behavioral Orchestration Framework (BOF).  
+The full orchestration codebase and evaluation scripts are **reserved for institutional research collaboration**.  
+
 ---
 
 ## Overview
@@ -108,7 +111,7 @@ DOI: https://doi.org/10.5281/zenodo.17491151
 ## Citation
 
 ```bibtex
-@misc{fuentes2025bof,
+@misc{fuentesp2025bof,
   author = {Fuentes Peña, H. Camilo},
   title = {Behavioral Orchestration Framework (BOF)},
   year = {2025},
