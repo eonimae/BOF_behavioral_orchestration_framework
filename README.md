@@ -134,5 +134,4 @@ Full legal text: https://creativecommons.org/licenses/by-nc/4.0/
 
 ## Disclaimer
 
-This repository contains a **conceptual demonstration only**. The full orchestration implementation, evaluation scripts, and integration logic are withheld to preserve intellectual property and ensure controlled research collaboration.
-
+This repository provides a conceptual, public-facing BOF demonstration: the full orchestration implementation and evaluation logic used in the Zenodo whitepaper are not fully included. The public code implements only the `writing` skill; the `reading` skill and other experimental components referenced in the whitepaper are not part of this repository.
