@@ -2,8 +2,29 @@
 
 *A runtime framework for behavioral coherence in small language models.*
 
-This repository provides the **public documentation and summary** of the Behavioral Orchestration Framework (BOF).  
-The full orchestration codebase and evaluation scripts are **reserved for institutional research collaboration**.  
+This repository now provides the **public documentation, summary, and a minimal public implementation** of the Behavioral Orchestration Framework (BOF). Earlier versions were documentation-only due to confidentiality constraints during active research applications; the current version includes a limited, public mini-BOF (writing skill only). The full orchestration codebase and evaluation scripts remain **reserved for institutional research collaboration**.  
+
+## What BOF is (and is not)
+
+- BOF is **not**: a prompt-engineering template, a chain-of-thought wrapper, an agent router or tool-using agent framework, or a training-time alignment method.
+- BOF **is**: behavioral control via constraints—a runtime orchestration loop that reduces behavioral failure modes to improve continuity (reasoning flow, tone, style).
+
+## Quickstart (mini-BOF demo)
+
+1. Ensure Python is available locally (Ollama + `phi3:mini` is optional but required for generative outputs; falls back to deterministic stubs otherwise).
+2. From the repository root, run `python main.py` to execute the mini-BOF demo (writing skill only).
+3. Optional: `python core_exec/skills/writing_phi3mini_alone.py` runs the standalone writing baseline without the orchestration loop.
+
+## What's included in this repo
+
+- Minimal public mini-BOF implementation focused on the `writing` skill.
+- Public documentation and summary aligned with the Zenodo whitepaper.
+
+## What's NOT included
+
+- Full orchestration implementation used in the Zenodo experiments.
+- `reading` skill and other experimental components referenced in the whitepaper.
+- Evaluation harness and scripts used for the reported metrics.
 
 ---
 
