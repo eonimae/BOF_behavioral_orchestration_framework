@@ -8,7 +8,7 @@ from core_exec.bpb_core import BPBCore
 from core_exec.meth.intent_discovery import IntentDiscovery
 from core_exec.meth.rlhf_tuning import RLHFTuning
 from data.log.logger import BOFLogger
-from core_exec.common_prompts import compose_reading_instruction_payload, compose_writing_instruction_payload
+from core_exec.common_prompts import compose_writing_instruction_payload
 
 
 def main():
@@ -76,14 +76,16 @@ if __name__ == "__main__":
         )
         bof_adaptive.initialize()
         writing_instruction = compose_writing_instruction_payload()
-        reading_instruction = compose_reading_instruction_payload()
         bof_adaptive.run(
             intent="writing",
             input_text=writing_instruction
         )
         bof_adaptive.run(
             intent="reading",
-            input_text=reading_instruction
+            input_text=(
+                "Researchers warn that coastal cities may face a tripling of flood events "
+                "within the next decade unless new mitigation plans receive funding."
+            )
         )
 
     # Run adaptive version

@@ -386,7 +386,4 @@ def _evaluate_with_model(self, text: str) -> Optional[Dict[str, float]]:
             return parsed
         attempts += 1
     return None
-REWRITE_SYSTEM_PROMPT = (
-    "Expand the following sentence into a short paragraph. Add more details about the setting, "
-    "the animals, and their actions, while maintaining the simplicity and clarity of the original sentence."
-)
+REWRITE_SYSTEM_PROMPT = "Rephrase and slightly expand the following text while keeping its meaning and tone natural."
