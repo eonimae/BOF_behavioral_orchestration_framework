@@ -13,7 +13,7 @@ This repository now provides the **public documentation, summary, and a minimal 
 
 ## Versions
 
-### v1.1-public (Dec 18, 2025) - **Current**
+### v1.1-public (Dec 18, 2025) - **Current (main branch)**
 Public demonstration with writing skill only.
 - **Status:** Minimal public implementation
 - **Code:** Simplified for demonstration
@@ -175,6 +175,24 @@ Full legal text: https://creativecommons.org/licenses/by-nc/4.0/
 
 ---
 
-## Disclaimer
+## Disclaimer (main branch - v1.1-public)
 
-This repository provides a conceptual, public-facing BOF demonstration: the full orchestration implementation and evaluation logic used in the Zenodo whitepaper are not fully included. The public code implements only the `writing` skill; the `reading` skill and other experimental components referenced in the whitepaper are not part of this repository.
+This repository provides a **public-facing demonstration** of BOF with simplified implementation (writing skill only). 
+
+**Note on version history:** This simplified version (v1.1) was released publicly before making the original research code available. The complete implementation used in the Zenodo whitepaper (Oct-Nov 2025) is now accessible in the `v1.0-whitepaper` branch for replication studies.
+
+**For the complete code from the whitepaper** (including WritingSkill, ReadingSkill, full orchestration logic, and evaluation scripts), switch to the [`v1.0-whitepaper`](https://github.com/eonimae/BOF_behavioral_orchestration_framework/tree/v1.0-whitepaper) branch.
+
+**What's NOT included in this branch (main/v1.1):**
+- Full orchestration implementation from the N=3 experiments
+- ReadingSkill and distillation components
+- Evaluation harness and scoring scripts
+- Complete BPB/ACF/AIS subsystem integration
+
+**What IS included in this branch:**
+- Simplified WritingSkill demonstration
+- Basic L1-L5 behavioral cycle
+- Baseline comparison (writing_phi3mini_alone.py)
+- Public documentation aligned with whitepaper
+
+For institutional collaboration or replication studies, contact: cafuher@gmail.com
