@@ -153,6 +153,23 @@ Full legal text: https://creativecommons.org/licenses/by-nc/4.0/
 
 ---
 
-## Disclaimer
+## Disclaimer (v1.0-whitepaper branch)
 
-This repository provides a conceptual, public-facing BOF demonstration: the full orchestration implementation and evaluation logic used in the Zenodo whitepaper are not fully included. The public code implements only the `writing` skill; the `reading` skill and other experimental components referenced in the whitepaper are not part of this repository.
+This branch contains the **original research code** used in the Zenodo whitepaper (Oct-Nov 2025). It includes:
+
+- ✅ WritingSkill (L1-L5 implementation)
+- ✅ ReadingSkill (distillation and evaluation)
+- ✅ Baseline comparison scripts (writing_phi3mini_alone.py, reading_phi3mini_alone.py)
+- ✅ Full orchestration logic (BPB, ACF, AIS subsystems)
+
+**Note:** This code represents the N=3 prototype used in the published experiments. For the current public demonstration (simplified, writing skill only), see the `main` branch (v1.1-public).
+
+**Known limitations (as acknowledged in whitepaper):**
+- N=3 (insufficient for statistical significance)
+- phi3:mini self-evaluation (potential bias)
+- 0.0-1.0 rubric (limited discrimination)
+- Fallback heuristics present
+
+For replication studies or institutional collaboration, contact: cafuher@gmail.com
+
+---
