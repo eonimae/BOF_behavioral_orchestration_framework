@@ -9,6 +9,28 @@ This repository now provides the **public documentation, summary, and a minimal 
 - BOF is **not**: a prompt-engineering template, a chain-of-thought wrapper, an agent router or tool-using agent framework, or a training-time alignment method.
 - BOF **is**: behavioral control via constraints—a runtime orchestration loop that reduces behavioral failure modes to improve continuity (reasoning flow, tone, style).
 
+---
+
+## Versions
+
+### v1.1-public (Dec 18, 2025) - **Current**
+Public demonstration with writing skill only.
+- **Status:** Minimal public implementation
+- **Code:** Simplified for demonstration
+- **Note:** This version was created for public access; full orchestration logic reserved for institutional collaboration
+- **Tag:** `v1.1-public`
+
+### v1.0-whitepaper (Oct-Nov 2025)
+Original implementation used in Zenodo whitepaper.
+- **Status:** Research prototype
+- **Results:** N=3, phi3:mini self-evaluation, 0.0-1.0 rubric
+- **DOI:** [10.5281/zenodo.17491151](https://doi.org/10.5281/zenodo.17491151)
+- **Branch:** `v1.0-whitepaper`
+- **Tag:** `v1.0-whitepaper`
+- **Note:** Available for replication studies
+
+---
+
 ## Quickstart (mini-BOF demo)
 
 1. Ensure Python is available locally (Ollama + `phi3:mini` is optional but required for generative outputs; falls back to deterministic stubs otherwise).
